@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scholarships - EduSpark Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    .scholarship-card {
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .scholarship-card:hover {
+      transform: translateY(-5px);
+    }
+    .marquee {
+      background: #0d6efd;
+      color: white;
+      padding: 8px;
+      font-weight: 600;
+    }
+    .scholarship-details {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">EduSpark</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="explore.html">Explore Colleges</a></li>
+          <li class="nav-item"><a class="nav-link active" href="scholarships.html">Scholarships</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Marquee -->
+  <marquee class="marquee">🎓 Explore Government Scholarships available for students across India! Stay aware of deadlines & eligibility.</marquee>
+
+  <!-- Scholarship Section -->
+  <main class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 text-primary">Government Scholarships in India</h2>
+      <div class="row g-4">
+
+        <!-- NMMS -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card scholarship-card p-3">
+            <h5 class="text-primary">National Means Cum Merit Scholarship (NMMS)</h5>
+            <p>For meritorious students from economically weaker sections (Class 9–12).</p>
+            <p class="scholarship-details">Eligibility: Family income below ₹3.5 LPA<br>
+              Start: August | End: November</p>
+            <a href="https://scholarships.gov.in/" target="_blank" class="btn btn-outline-primary btn-sm">Visit Now</a>
+          </div>
+        </div>
+
+        <!-- CSSS -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card scholarship-card p-3">
+            <h5 class="text-primary">Central Sector Scheme of Scholarships (CSSS)</h5>
+            <p>For college/university students based on 12th merit (top 20 percentile).</p>
+            <p class="scholarship-details">Eligibility: Family income < ₹8 LPA<br>
+              Start: July | End: October</p>
+            <a href="https://scholarships.gov.in/" target="_blank" class="btn btn-outline-primary btn-sm">Visit Now</a>
+          </div>
+        </div>
+
+        <!-- ST Fellowship -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card scholarship-card p-3">
+            <h5 class="text-primary">National Fellowship for ST Students</h5>
+            <p>Supports ST students pursuing M.Phil & Ph.D.</p>
+            <p class="scholarship-details">Eligibility: ST students with PG degree<br>
+              Start: May | End: July</p>
+            <a href="https://scholarships.gov.in/" target="_blank" class="btn btn-outline-primary btn-sm">Visit Now</a>
+          </div>
+        </div>
+
+        <!-- PMSS -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card scholarship-card p-3">
+            <h5 class="text-primary">Prime Minister’s Scholarship Scheme (PMSS)</h5>
+            <p>For wards of ex-servicemen/ex-coast guard personnel pursuing professional courses.</p>
+            <p class="scholarship-details">Eligibility: Min. 60% in 12th/Diploma<br>
+              Start: July | End: October</p>
+            <a href="https://ksb.gov.in/" target="_blank" class="btn btn-outline-primary btn-sm">Visit Now</a>
+          </div>
+        </div>
+
+        <!-- Inspire -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card scholarship-card p-3">
+            <h5 class="text-primary">INSPIRE Scholarship</h5>
+            <p>For students in natural & basic sciences (B.Sc, M.Sc).</p>
+            <p class="scholarship-details">Eligibility: Top 1% in 12th or JEE rank<br>
+              Start: October | End: December</p>
+            <a href="https://online-inspire.gov.in/" target="_blank" class="btn btn-outline-primary btn-sm">Visit Now</a>
+          </div>
+        </div>
+
+        <!-- AICTE Pragati/Saksham -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card scholarship-card p-3">
+            <h5 class="text-primary">AICTE Pragati & Saksham</h5>
+            <p>For girl students & differently-abled pursuing technical education.</p>
+            <p class="scholarship-details">Eligibility: Family income < ₹8 LPA<br>
+              Start: September | End: December</p>
+            <a href="https://www.aicte-india.org/schemes/students-development-schemes" target="_blank" class="btn btn-outline-primary btn-sm">Visit Now</a>
+          </div>
+        </div>
+
+        <!-- MANF -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card scholarship-card p-3">
+            <h5 class="text-primary">Maulana Azad National Fellowship</h5>
+            <p>For students of minority communities pursuing M.Phil & Ph.D.</p>
+            <p class="scholarship-details">Eligibility: Must clear NET/SET<br>
+              Start: June | End: September</p>
+            <a href="https://scholarships.gov.in/" target="_blank" class="btn btn-outline-primary btn-sm">Visit Now</a>
+          </div>
+        </div>
+
+        <!-- Post-Matric -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card scholarship-card p-3">
+            <h5 class="text-primary">Post-Matric Scholarship Scheme</h5>
+            <p>Financial support for SC, ST, OBC, & minority students after Class 10.</p>
+            <p class="scholarship-details">Eligibility: Family income < ₹2.5–8 LPA<br>
+              Start: July | End: November</p>
+            <a href="https://scholarships.gov.in/" target="_blank" class="btn btn-outline-primary btn-sm">Visit Now</a>
+          </div>
+        </div>
+
+        <!-- NTSE -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card scholarship-card p-3">
+            <h5 class="text-primary">National Talent Search Examination (NTSE)</h5>
+            <p>Identifies talented Class 10 students for higher studies scholarships.</p>
+            <p class="scholarship-details">Eligibility: Class 10 students<br>
+              Start: August | Exam: November</p>
+            <a href="https://ncert.nic.in/national-talent-examination.php" target="_blank" class="btn btn-outline-primary btn-sm">Visit Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-section py-4 bg-dark text-white">
+    <div class="container text-center">
+      <p class="mb-1">0241csds215@niet.co.in </p>
+      <p>+91 12345 67890</p>
+      <p class="mb-0">
+        <a href="#" class="text-white me-3">Facebook</a>
+        <a href="#" class="text-white me-3">Twitter</a>
+        <a href="#" class="text-white">Instagram</a>
+      </p>
+      <hr class="border-light">
+      <p class="mb-0">&copy; 2025 EduSpark. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

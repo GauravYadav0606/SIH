@@ -1,0 +1,307 @@
+:root {
+  --primary-color: #4F46E5;
+  --accent-color: #FB923C;
+  --background-color: #FFFDF6;
+  --divider-color: #E5E7EB;
+  --hover-color: #10B981;
+  --secondary-color: #6366F1;
+  --text-color: #1F2937;
+  --light-gray: #F9FAFB;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  color: var(--primary-color) !important;
+  font-weight: bold;
+  font-size: xx-large;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--secondary-color) !important;
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 12px 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+}
+
+.btn-accent:hover {
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, var(--hover-color), var(--secondary-color));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
+.option-card {
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.option-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.option-card input[type="radio"] {
+  margin-right: 10px;
+}
+
+.progress-bar {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="60" cy="80" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.5;
+}
+
+.hero-section h1 {
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.problem-section {
+  background-color: white;
+  border-top: 1px solid var(--divider-color);
+  padding: 80px 0;
+}
+
+.problem-section h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.problem-section .row h3 {
+  color: var(--accent-color);
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.how-it-works-section {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.how-it-works-section h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 8px var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.step-icon:hover {
+  transform: scale(1.1);
+}
+
+.scholarships-section {
+  background-color: white;
+  padding: 80px 0;
+}
+
+.scholarships-section h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px var(--shadow);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px var(--shadow);
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.testimonials-section {
+  background-color: var(--background-color);
+  padding: 80px 0;
+}
+
+.testimonials-section h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px var(--shadow);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  font-size: 4rem;
+  color: var(--accent-color);
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  opacity: 0.3;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-card cite {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.footer-section {
+  background: linear-gradient(135deg, #1F2937, #374151);
+  color: white;
+  padding: 60px 0 30px;
+}
+
+.footer-section h5 {
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.footer-section a {
+  color: #D1D5DB;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--accent-color);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 0;
+  }
+  .display-4 {
+    font-size: 2rem;
+  }
+  .card-body {
+    padding: 20px;
+  }
+  .testimonial-card {
+    padding: 20px;
+  }
+}
